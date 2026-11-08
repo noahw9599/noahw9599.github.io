@@ -253,3 +253,9 @@ a,button,.project-index>a{transition-timing-function:var(--ease-out)}
 @media (prefers-reduced-motion:reduce){
   .project-index>a,.project-index .index-media img,.button,.nav-resume,.contact-links a{transition-duration:0.01ms!important}
 }
+
+/* Interaction detail: strong contrast and keyboard clarity. */
+.nav a:hover,.nav a:focus-visible{color:#d6f25c}
+.nav-resume:hover{border-color:#d6f25c;background:#23362b;color:#d6f25c}
+.project-index>a:focus-visible{outline:3px solid #85a658;outline-offset:3px}
+@media(max-width:420px){.nav-links{gap:9px}.nav-links a{font-size:11px}.nav .wordmark{margin-right:auto}.nav-resume{padding:7px 8px!important}}
