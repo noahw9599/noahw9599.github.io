@@ -14,8 +14,7 @@ a:focus-visible,summary:focus-visible,video:focus-visible,.project-index>a:focus
 .nav-resume:hover{background:#dceaff;border-color:#c9dbfc;color:#123e8e}
 .hero{grid-template-columns:minmax(0,1fr);justify-items:center;text-align:center;gap:40px;background:white;color:var(--ink);padding-block:clamp(48px,7vw,100px) 0;border-radius:0;overflow:visible}
 .hero::before,.hero::after{display:none}
-.hero-copy{width:100%}
-.hero .kicker,.section-heading .kicker,.toolkit .kicker,.project-heading .kicker,.conquest-virtual .kicker,.experience .kicker,.contact .kicker,.about .kicker{color:#315b93}
+.hero-copy{width:100%}.hero .kicker,.section-heading .kicker,.toolkit .kicker,.project-heading .kicker,.experience .kicker,.contact .kicker,.about .kicker{color:#315b93}
 .hero h1{margin:16px auto 20px;max-width:17ch;font-size:clamp(40px,7vw,90px);line-height:1.02;font-weight:700;letter-spacing:-.055em}
 .hero h1 em{color:var(--accent)}
 .hero .lede{margin-inline:auto;color:#515866;max-width:62ch;font-size:clamp(16px,1.6vw,21px);line-height:1.55}
@@ -39,21 +38,16 @@ a:focus-visible,summary:focus-visible,video:focus-visible,.project-index>a:focus
 .project-index>a:hover{color:var(--ink);border-color:#9eb8df;transform:none;box-shadow:0 6px 24px #162d4d12}
 .project-index>a:hover .index-media img{transform:none}
 .project-index .index-media{background:#f1f4f8}
-.project-index>a>span:not(.index-media),.project-index small{color:#515866}
-.project-index b,.conquest-virtual-links a{color:var(--accent)}
+.project-index>a>span:not(.index-media),.project-index small{color:#515866}.project-index b{color:var(--accent)}
 .project-heading{background:#fafbfd;border-color:var(--line)}
 .project-heading .index{color:#174eae;background:#e6efff;border-radius:999px}
 .project .detail h3{color:#25304a;font-size:16px}
 .project .image-wrap{background:#f2f5f9;border-color:var(--line);border-radius:16px}
 .project .result{background:var(--blue-tint);border-color:var(--accent);border-radius:0 16px 16px 0}
 .project .result strong{color:#17396c;font-variant-numeric:tabular-nums}
-.project .tags li{background:#f2f5fa;border-color:#dce4f0;color:#394f71;border-radius:999px}
-.technical,.conquest-virtual{border-color:var(--line)}
+.project .tags li{background:#f2f5fa;border-color:#dce4f0;color:#394f71;border-radius:999px}.technical{border-color:var(--line)}
 .technical summary{color:#174eae}
-.conquest-virtual{background:#fafbfd}
-#conquest .conquest-sequence{background:#f1f4f8;border-color:var(--line);border-radius:20px}
-#conquest .conquest-sequence figcaption,.conquest-virtual-figure figcaption{color:#515866}
-.conquest-virtual-figure img,.learning-project .video-card,.learning-project .metric-row{border-color:var(--line);border-radius:16px}
+#bearing-assembly .bearing-assembly-sequence{background:#f1f4f8;border-color:var(--line);border-radius:20px}#bearing-assembly .bearing-assembly-sequence figcaption{color:#515866}.learning-project .video-card,.learning-project .metric-row{border-color:var(--line);border-radius:16px}
 .learning-project .metric-row{background:#f1f5fb}
 .experience{max-width:1280px;margin-inline:auto;background:#f1f5fb;color:var(--ink);border:1px solid var(--line)}
 .experience-note,.experience-copy p{color:#515866}
@@ -98,13 +92,8 @@ a:focus-visible,summary:focus-visible,video:focus-visible,.project-index>a:focus
 .project-copy{min-width:0;gap:20px}.project-evidence{min-width:0;gap:16px}
 .project .detail p{line-height:1.65}
 .project .photo-pair{grid-template-columns:repeat(2,minmax(0,1fr))}
-#conquest .conquest-sequence{padding:16px;min-width:0}
-#conquest .conquest-sequence video{max-height:440px;object-fit:contain}
-.conquest-virtual{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:center;gap:var(--grid-gap);padding:var(--panel-inset)}
-.conquest-virtual-copy{min-width:0}
-.conquest-virtual .conquest-virtual-links{margin:16px 0 0}
-.conquest-virtual-figure{margin:0;min-width:0;max-width:none}
-.conquest-virtual-figure img{max-height:430px;object-fit:contain;background:#d5dfdd}
+#bearing-assembly .bearing-assembly-sequence{padding:16px;min-width:0}
+#bearing-assembly .bearing-assembly-sequence video{max-height:440px;object-fit:contain}
 .technical{padding-inline:var(--panel-inset)}
 .learning-project .learning-intro,.learning-project .experiment-heading,.learning-project .video-grid,.learning-project .metric-row,.learning-project .qualification,.learning-project .learning-result,.learning-project .tags{margin-inline:var(--panel-inset)}
 .learning-project .metric-row>div{min-width:0;padding-inline:10px}
@@ -120,22 +109,19 @@ a:focus-visible,summary:focus-visible,video:focus-visible,.project-index>a:focus
 .contact{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--grid-gap);padding:var(--panel-inset)}
 .contact-links>a{gap:12px;overflow-wrap:anywhere}
 .footer{padding-block:24px;gap:12px;flex-wrap:wrap}
-@media(max-width:1100px){.project-index strong{min-height:0}.project-index .index-conquest .index-media{height:clamp(150px,24vw,230px)}}
+@media(max-width:1100px){.project-index strong{min-height:0}.project-index .index-bearing-assembly .index-media{height:clamp(150px,24vw,230px)}}
 @media(max-width:800px){
 .hero{grid-template-columns:minmax(0,1fr);text-align:center;gap:24px}
 .hero h1,.hero .lede{margin-inline:auto}.hero-actions{justify-content:center}
 .hero-visual>img{height:clamp(240px,52vw,360px)}
 .section-heading{grid-template-columns:minmax(0,1fr);gap:8px}
 .section-heading>p{justify-self:start}
-.section-heading>p br{display:none}
-.project-body,.conquest-virtual,.experience .experience-inner,.contact{grid-template-columns:minmax(0,1fr)}
-.project-body,.conquest-virtual{gap:24px}
-.conquest-virtual-figure{width:100%}
+.section-heading>p br{display:none}.project-body,.experience .experience-inner,.contact{grid-template-columns:minmax(0,1fr)}.project-body{gap:24px}
 .experience,.contact{border-inline:1px solid var(--line)}
 }
 @media(max-width:560px){
 .nav{gap:8px;padding-inline:10px}.nav-links{gap:8px}.nav-links a{font-size:11px}
-.project-index strong{min-height:2.4em}.project-index .index-conquest strong{min-height:0}
+.project-index strong{min-height:2.4em}.project-index .index-bearing-assembly strong{min-height:0}
 .project .photo-pair img{height:clamp(108px,34vw,155px)}
 .about{grid-template-columns:minmax(0,1fr);text-align:center}.about .portrait{width:148px}.about-copy>p{margin-inline:auto}
 .skill-grid{grid-template-columns:minmax(0,1fr)}
